@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0px;
+}
+.count{
+    margin-left: 29%;
+    
+}
+.floatRight{
+    float: right;
+}
+.stdFontSize{
+    font-size: 15px;
+  }
+  
+  .whiteFontColor{
+    color: white;
+  }
+  .row{
+    display: flex; 
+    height: 95vh;    
+  }
+  .greyFont{
+    color: grey;
+  }
+  .floatLeft{
+      float: left;
+  }
+.flexHeight{
+    height: 95vh;
+}

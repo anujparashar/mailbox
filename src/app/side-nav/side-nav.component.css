@@ -1,0 +1,26 @@
+  .fontSize{
+      font-size: 27px;
+  }
+  .column1{
+      flex: 20%;
+      float: left;
+      background-color:rgb(29, 27, 27);
+  }
+  .column2{
+      flex: 80%;
+      float: left;
+  }
+.sideNav{
+  margin-top: 34%;
+  padding: 10%;
+}
+.menu{
+padding: 5%;
+}
+.composeMail{
+  height: 8%;
+  padding-top: 30px;
+  width: auto;
+  text-align: center;
+  background-color: rgb(0, 200, 250);
+}

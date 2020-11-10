@@ -1,0 +1,37 @@
+.colDtl{
+    flex: 65%;
+    background-color: white;
+}
+.coltab{
+    flex: 35%;
+    max-height: 95vh;
+    overflow: auto;
+    border-right: 1px solid grey;
+
+}
+.tabSub{
+    background-color: white;
+    border-bottom: 1px solid rgb(240, 237, 237);
+    margin-top: 2px;
+    height: 70px;
+    padding: 10px;
+}
+.title{
+    padding: 10px;
+}
+.name{
+    margin-left: 10px;
+}
+.dot{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: darkcyan;
+}
+.selected{
+    color: darkcyan;
+}                              
+
+  .noShow{
+    margin:31% 0px 10px 53px;
+  }

@@ -1,0 +1,16 @@
+.mailBodyTitle{
+    background-color: seashell;
+    padding: 15px 10px 10px 32px;
+    font-weight: bold;
+    height: 13%;
+}
+.deleteIcon{
+    float: right;
+}
+.mailBody{
+    padding: 4%;
+}
+.paddingAlign{
+    padding-top: 11px
+    ;
+}

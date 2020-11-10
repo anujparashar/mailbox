@@ -1,0 +1,25 @@
+<div class="row">
+    <div *ngIf='selectedTabData' class="stdFontSize coltab">
+        <div *ngFor='let tab of selectedTabData' (click)='showFullMail(tab)' class="tabSub"
+            [class.selected]="showFullLengthMail?.id=== tab.id">
+            <div>
+                <div class="title">
+                    {{tab.data.subject}}
+                    <span *ngIf="(tab.data.readStatus==='unread')" class="floatRight dot"></span>
+                </div>
+                <div class="name greyFont">
+                    {{tab.data.name}}
+                    <span class="unreadDot floatRight">
+                        {{tab.data.date}}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf='!selectedTabData' class="noShow greyFont">
+        Nothing to see here,great Job!
+    </div>
+    <div class="colDtl flexHeight">
+        <app-mail-preview></app-mail-preview>
+    </div>
+</div>
