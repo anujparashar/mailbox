@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { MailInteractionService } from '../mail-interaction.service';
+import { MailInteractionService } from '../../mail-interaction.service';
 
 @Component({
   selector: 'app-side-nav',

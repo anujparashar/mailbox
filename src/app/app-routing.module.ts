@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { SideNavComponent } from './side-nav/side-nav.component';
+import { SideNavComponent } from './sidenav_component/side-nav/side-nav.component';
 
 
 const routes: Routes = [
