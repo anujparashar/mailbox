@@ -10,6 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer_Component/footer/footer.component';
 import { ComposeMailComponent } from './sidenav_component/side-nav/composemail_Component/compose-mail/compose-mail.component';
 import { CommonModule } from '@angular/common';
+import { DraftComponent } from './sidenav_component/side-nav/draft_mails/draft/draft.component';
+import { SentMailsComponent } from './sidenav_component/side-nav/sent_mails/sent-mails/sent-mails.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { CommonModule } from '@angular/common';
     MailListComponent,
     MailPreviewComponent,
     FooterComponent,
-    ComposeMailComponent
+    ComposeMailComponent,
+    DraftComponent,
+    SentMailsComponent
   ],
   imports: [
     BrowserModule,

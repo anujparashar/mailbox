@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { MailInteractionService } from '../../mail-interaction.service';
 
@@ -15,7 +16,7 @@ export class SideNavComponent implements OnInit {
   selectedTabData: any;
   trashMailsData = [];
 
-  constructor(private mailInteractionService: MailInteractionService) { }
+  constructor(private mailInteractionService: MailInteractionService,private router: Router) { }
   private subscriptions: Subscription[] = [];
   ngOnInit(): void {
     this.getInboxData();
@@ -48,10 +49,14 @@ export class SideNavComponent implements OnInit {
     switch (selectedTab) {
       case 'inbox':
         this.selectedTabData = this.inboxList;
+        this.router.navigate(['MailListComponent'])
         break
       case 'trash':
         this.selectedTabData = this.trashMailsData
+        this.router.navigate(['MailListComponent']);
+        break
     }
+    this.mailInteractionService.selectedTabData.next(this.selectedTabData);
   }
 
   //getting trash mail data

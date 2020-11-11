@@ -10,6 +10,7 @@ export class MailInteractionService {
   inboxMails = new BehaviorSubject([]);
   trashMAils = new BehaviorSubject([]);
   vewCompleteMail = new BehaviorSubject(null);
+  selectedTabData = new BehaviorSubject(null)
   constructor(private http: HttpClient) { }
 
   getInboxFromJson() {

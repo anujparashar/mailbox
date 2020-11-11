@@ -8,8 +8,8 @@
     <div class="sideNav">
       <div (click)='getSelectedTabData("inbox")' class="menu">Inbox
         <span *ngIf="(inboxReadCountNum !== 0)" class="count menu">{{inboxReadCountNum}}</span></div>
-      <div class="menu">Sent</div>
-      <div class="menu">Drafts</div>
+      <div class="menu" routerLink="/SentMailsComponent">Sent</div>
+      <div class="menu" routerLink="/DraftComponent">Drafts</div>
       <div (click)='getSelectedTabData("trash")' class="menu">Trash
         <span class="count" *ngIf="(trashMailsData.length!==0)">
           {{trashMailsData.length}}
@@ -19,7 +19,7 @@
   </div>
   <!-- list of mail column -->
   <div class="column2 flexHeight">
-    <app-mail-list [selectedTabData]='selectedTabData'></app-mail-list>
+    <router-outlet></router-outlet>
   </div>
 </div>
 <!-- applicatio footer -->
